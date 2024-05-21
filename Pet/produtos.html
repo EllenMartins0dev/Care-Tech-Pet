@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-white" style="position: fixed; top: 0; width: 100%; z-index: 999;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" width="70vh"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastro.html">Cadastro</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Produtos
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="produtos.html#coleiras">Coleiras</a></li>
+                    <li><a class="dropdown-item" href="produtos.html#brinquedos">Brinquedos</a></li>
+                    <li><a class="dropdown-item" href="produtos.html#racoes">Rações</a></li>
+                    <li><a class="dropdown-item" href="produtos.html#higiene">Higiene</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" style="width: 50%; margin-top: 0.5%;">
+              <input class="form-control me-2" type="search" placeholder="O que deseja?" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Pesquisar</button>
+            </form>
+            <a href="#" class="cart-icon" onclick="toggleCart()">
+              <img src="img/carrinho-de-compras.png" alt="Carrinho de Compras" style="width: 6vh; margin-left: 20%;">
+              <span id="cart-count" class="badge badge-warning">0</span>
+          </a>
+          </div>
+        </div>
+      </nav>
+      <br><br><br><br>
+
+      <div class="container">
+        <!-- Seção de Coleiras -->
+        <section id="coleiras" class="my-5">
+            <h2>Coleiras</h2>
+            <div class="row">
+                <!-- Card de produto 1 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/col_1.png" class="card-img-top" alt="camiseta1">
+                        <div class="card-body">
+                            <h5 class="card-title">Coleira para cachorros</h5>
+                            <p class="card-text">Coleira de courino matelassê rosa com nome e telefone.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card de produto 2 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/col_2.png" class="card-img-top" alt="camiseta2">
+                        <div class="card-body">
+                            <h5 class="card-title">Coleira peitoral</h5>
+                            <p class="card-text">Ajuste fácil, coleira macia dupla N°6.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card de produto 3 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/col_3.png" class="card-img-top" alt="camiseta3">
+                        <div class="card-body">
+                            <h5 class="card-title">Coleira para gatos</h5>
+                            <p class="card-text">Coleira azul de veludo lisa com guizo mini Santa Fé.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card de produto 4 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/col_4.png" class="card-img-top" alt="boné">
+                        <div class="card-body">
+                            <h5 class="card-title">Coleira para gatos</h5>
+                            <p class="card-text">Coleira xadrez rosa com guizo.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Seção de Brinquedos -->
+        <section id="brinquedos" class="my-5">
+            <h2>Brinquedos</h2>
+            <div class="row">
+                <!-- Card de produto 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/brin_1.png" class="card-img-top" alt="pelucia1">
+                        <div class="card-body">
+                            <h5 class="card-title">Brinquedo para cachorros</h5>
+                            <p class="card-text">Osso azul alteres pata macio.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card de produto 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/brin_2.png" class="card-img-top" alt="pelucia2">
+                        <div class="card-body">
+                            <h5 class="card-title">Brinquedo para gatos</h5>
+                            <p class="card-text">Arranhador casa com tenda .</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Card de produto 3 -->
+                   <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/brin_3.png" class="card-img-top" alt="pelucia2">
+                        <div class="card-body">
+                            <h5 class="card-title">Brinquedo para pássaros</h5>
+                            <p class="card-text">Quadrado balanço para papagaios e outras aves.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Card de produto 4 -->
+                   <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/brin_4.png" class="card-img-top" alt="pelucia2">
+                        <div class="card-body">
+                            <h5 class="card-title">Brinquedo para hamsters</h5>
+                            <p class="card-text">Casa, gaiolae brinquedo para hamsters, 1 andar completa.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Seção de Rações -->
+        <section id="racoes" class="my-5">
+            <h2>Rações</h2>
+            <div class="row">
+                <!-- Card de produto 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/rac_1.png" class="card-img-top" alt="figure1">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração para cachorros</h5>
+                            <p class="card-text">Ração Pedigree para cachorros pequenos 10,1KGs.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card de produto 2 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/rac_2.png" class="card-img-top" alt="figure2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração para gatos</h5>
+                            <p class="card-text">Ração Whiskas sabor carne 10,1KGs.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card de produto 3 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/rac_3.png" class="card-img-top" alt="figure3">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração para pássaros</h5>
+                            <p class="card-text">Alpiste - pássaro forte - 500g.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Card de produto 4 -->
+                   <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/rac_4.png" class="card-img-top" alt="pelucia2">
+                        <div class="card-body">
+                            <h5 class="card-title">Ração para hamsters</h5>
+                            <p class="card-text">Ração para hamsters e gerbil - Mega Zoo - 350g.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Seção de Higiene -->
+        <section id="higiene" class="my-5">
+            <h2>Higiene</h2>
+            <div class="row">
+                <!-- Card de produto 1 -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/hig_1.png" class="card-img-top" alt="caneca">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit para cachorros</h5>
+                            <p class="card-text">Kit de higiene - Sanol Dog - shampoo, condicionador e colônia.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>  
+                </div>
+                   <!-- Card de produto 2 -->
+                   <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/hig_2.png" class="card-img-top" alt="pelucia2">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit para gatos</h5>
+                            <p class="card-text">Kit gato limpo para banho à seco.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Card de produto 3 -->
+                   <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/hig_3.png" class="card-img-top" alt="pelucia2">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit para pássaros</h5>
+                            <p class="card-text">Kit de banho para aves - Labcon Club - 100g.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+                   <!-- Card de produto 4 -->
+                   <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="img/hig_4.png" class="card-img-top" alt="pelucia2">
+                        <div class="card-body">
+                            <h5 class="card-title">Kit para hamsters</h5>
+                            <p class="card-text">Kit de banho à seco para hamsters chinchila - 1Kg.</p>
+                            <a href="#" class="btn btn-outline-primary add-to-cart">Comprar agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div id="cart-sidebar" class="cart-sidebar">
+      <div class="cart-header">
+          <h5>Carrinho de Compras</h5>
+          <button class="close-btn" onclick="toggleCart()">×</button>
+      </div>
+      <div id="cart-items" class="cart-items">
+          <p>Nada foi encontrado</p>
+      </div>
+      <div class="cart-footer">
+          <button class="btn btn-danger" onclick="clearCart()">Limpar</button>
+          <button class="btn btn-success" onclick="finalizePurchase()">Finalizar Compra</button>
+      </div>
+  </div>
+
+
+      <br><br>
+      <footer class="footer text-white py-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 d-flex align-items-center">
+                    <img src="img/logo.png" alt="Logo" class="footer-logo" style="width: 12vh;">
+                    <p class="mb-0 ms-3">Av. Mal. Castelo Branco, 1000<br>Piracicaba - SP</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <p class="mb-0" style="margin-top: 2%;">&copy; 2024 Care Tech Pet. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-4 text-end footer-icons">
+                    <a href="https://www.instagram.com" class="text-white me-3" target="_blank">
+                        <img src="img/icon_insta.png" alt="Instagram" class="footer-icon insta-icon">
+                    </a>
+                    <a href="https://wa.me/19983325414" class="text-white me-3" target="_blank">
+                        <img src="img/icon_wpp.png" alt="WhatsApp" class="footer-icon wpp-icon">
+                    </a>
+                    <a href="mailto:caretechpet@gmail.com" class="text-white me-3">
+                        <img src="img/icon_email.png" alt="Email" class="footer-icon email-icon">
+                    </a>
+                    <a href="https://www.facebook.com" class="text-white" target="_blank">
+                        <img src="img/icon_face.png" alt="Facebook" class="footer-icon face-icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/rolagem_suave.js"></script>
+    <script src="js/carrinho_compras.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
